@@ -1,11 +1,11 @@
 from django.contrib import admin
-from page.models import Project,Image
+from page.models import Article,Image
 
-class ProjectAdmin(admin.ModelAdmin):
+class ArticleAdmin(admin.ModelAdmin):
     pass
 
 class ImageAdmin(admin.ModelAdmin):
     pass
 
-admin.site.register(Project,ProjectAdmin)
+admin.site.register(Article,ArticleAdmin)
 admin.site.register(Image,ImageAdmin)
