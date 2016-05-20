@@ -5,12 +5,12 @@ from page.models import Article,Image,Catalog
 class ArticleAdmin(SummernoteModelAdmin):
     pass
 
-class ImageAdmin(admin.ModelAdmin):
-    pass
+# class ImageAdmin(admin.ModelAdmin):
+#     pass
 
 class CatalogAdmin(admin.ModelAdmin):
     pass
 
 admin.site.register(Article,ArticleAdmin)
-admin.site.register(Image,ImageAdmin)
+# admin.site.register(Image,ImageAdmin)
 admin.site.register(Catalog,CatalogAdmin)
