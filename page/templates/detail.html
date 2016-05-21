@@ -96,8 +96,21 @@ body {
                 <td align="left" valign="top"><img src="/static/images/1-1_16.gif" width="235" height="78" /></td>
               </tr>
             </table></td>
-            <td width="356" align="left" valign="top"><img src="/static/images/1-1_12.gif" width="483" height="390" /></td>
-            <td width="389" align="left" valign="top"><img src="/static/images/1-1_13.jpg" width="262" height="390" /></td>
+            <td width="19" align="left" valign="top"><table width="20" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+            <td width="726" align="left" valign="top"><table width="724" height="389" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td align="left" valign="top" bgcolor="#FFF4E2" style="padding:30px;line-heigh:15px;">
+                  <h1 align="center">{{ article.name }}</h1>
+                  {% autoescape off %}
+                    {{ article.text }}
+                  {% endautoescape %}
+                </td>
+              </tr>
+            </table></td>
             </tr>
         </table></td>
       </tr>
