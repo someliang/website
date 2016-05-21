@@ -20,7 +20,7 @@ import settings
 pic_path = '/home/liang/projects/website/website/media'
 urlpatterns = [
     url(r'^$', include('page.urls')),
-    url(r'^page/', include('page.urls')),
+    url(r'^page/', include('page.urls', namespace="page")),
     url(r'^admin/', admin.site.urls),
     url(r'^summernote/', include('django_summernote.urls')),
 ]
