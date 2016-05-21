@@ -14,3 +14,6 @@ def detail(request, article_id):
     article = Article.objects.get(pk=article_id)
 
     return render(request, 'detail.html', {'catalogs':catalogs,'article':article})
+
+def images(request):
+    return render(request, 'images.html')
