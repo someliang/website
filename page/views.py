@@ -18,3 +18,11 @@ def detail(request, article_id):
 def images(request):
     catalogs = Catalog.objects.all()
     return render(request, 'images.html',{'catalogs':catalogs})
+
+
+def video(request):
+    catalogs = Catalog.objects.all()
+    return render(request, 'video.html',{'catalogs':catalogs})
+
+def video_play(request, video_id):
+    return render(request, 'video_play.html',{'video_id':video_id})
