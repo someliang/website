@@ -219,7 +219,7 @@ p { margin: 0 0 5px 0; }
 
 /* Container */
 
-div#container { width: 900px; }
+div#container { width: 644px; }
 
 /* Filtrify link*/
 div#author {
@@ -300,7 +300,7 @@ div#content pre.collapse code { display:block; }
 /* Content -> Unordered Lists */
 
 div#content ul#itemContainer { list-style: none; padding:0; margin: 20px 0;  }
-div#content ul#itemContainer li { display: inline-block; margin: 5px; zoom: 1; *display:inline; }
+div#content ul#itemContainer li { display: inline-block; margin: 0 36px 20px 0; zoom: 1; *display:inline; }
 div#content ul#itemContainer ll li img { vertical-align: bottom; width: 125px; height: 125px; }
 
 /* Content -> index */
