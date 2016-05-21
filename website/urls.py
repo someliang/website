@@ -21,5 +21,4 @@ pic_path = '/home/liang/projects/website/website/media'
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^summernote/', include('django_summernote.urls')),
-    url(r'^static/(?P<path>.*)', 'django.views.static.serve', {'document_root': pic_path, 'show_indexes':True}),
 ]
