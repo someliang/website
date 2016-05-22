@@ -26,3 +26,8 @@ def video(request):
 
 def video_play(request, video_id):
     return render(request, 'video_play.html',{'video_id':video_id})
+
+def example(request):
+    catalogs = Catalog.objects.all()
+    example = catalogs[4].article_set.all()[0]
+    return render(request, 'detail.html', {'catalogs':catalogs, 'article':example})

@@ -25,7 +25,7 @@ class Catalog(models.Model):
         app_label = string_with_title('page', u"网站管理")
 
 class Article(models.Model):
-    catelog = models.ForeignKey(Catalog, verbose_name=u"所属目录")
+    catelog = models.ForeignKey(Catalog, verbose_name=u"所属目录",blank=True)
     name = models.CharField(u"标题", max_length = 30)
     text = models.TextField(u"内容")
     video = models.FileField(u"视频", blank=True, upload_to = './upload')
