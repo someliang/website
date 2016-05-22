@@ -397,3 +397,5 @@ div#content.author p { width: 590px; position: relative; }
 }
 
 .disappear {display:none}
+
+.friend-link {position:absolute;left:195px;top:830px;}
