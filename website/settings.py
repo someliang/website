@@ -130,7 +130,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     # '/home/liang/projects/website/website/media',
-   # '/Users/liang/Projects/python/website/website/media',
+    # '/Users/liang/Projects/python/website/website/media',
     'E:\website\website\media'
 ]
 
