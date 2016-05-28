@@ -1,4 +1,4 @@
-/*
+﻿/*
  * HTML5 Boilerplate
  *
  * What follows is the result of much research on cross-browser styling.
@@ -398,4 +398,5 @@ div#content.author p { width: 590px; position: relative; }
 
 .disappear {display:none}
 
-.friend-link {position:absolute;left:195px;top:830px;}
+.friend-link {position:relative;}
+.friend-link select{margin-top:-34.5px;margin-left:56.5px;}

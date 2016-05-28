@@ -2,4 +2,5 @@
 .idea
 django-summernote
 *.mp4
-
+run.bat
+*.db

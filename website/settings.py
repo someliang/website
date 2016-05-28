@@ -129,8 +129,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
+<<<<<<< HEAD
      '/home/liang/projects/website/website/media',
 #    '/Users/liang/Projects/python/website/website/media',
+=======
+    # '/home/liang/projects/website/website/media',
+    # '/Users/liang/Projects/python/website/website/media',
+    'E:\website\website\media'
+>>>>>>> b8b6729fc44f05146618bc5603b5e8f95e8df5d8
 ]
 
 SUMMERNOTE_CONFIG = {'lang': 'zh_CN'}
