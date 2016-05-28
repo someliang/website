@@ -184,7 +184,7 @@ body {
            {% for catalog in catalogs %}
             { id: {{ catalog.id}}, pId:0, name: '{{ catalog.name }}', open:true},
             {% for article in catalog.article_set.all %}
-              {id: {{ catalog.id }}{{ article.id }}, pId:{{ catalog.id }}, name: '{{ article.name }}',url:"{% url 'page:detail' article.id %}" },
+              {id: {{ catalog.id }}{{ article.id }}, pId:{{ catalog.id }}, name: '{{ article.name }}',url:"{% url 'page:detail' article.id %}",target:'_self'},
             {% endfor %}
            {% endfor %}
 		];
