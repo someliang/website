@@ -13,9 +13,9 @@
 <script type="text/javascript" src="/static/js/jPages.js"></script>
 <title>
 	{% if article.name %}
-		康复治疗-{{ article.name }}
+		劲椎病的康复-{{ article.name }}
 	{% else %}
-		康复治疗
+		劲椎病的康复
 	{% endif %}
 </title>
 <style type="text/css">
@@ -187,7 +187,13 @@ body {
 
 		var zNodes =[
            {% for catalog in catalogs %}
-            { id: {{ catalog.id}}, pId:0, name: '{{ catalog.name }}', open:true},
+            { id: {{ catalog.id}}, pId:0, name: '{{ catalog.name }}',
+            {% if catalog.id == 5 %}
+              open:false
+            {% else %}
+              open:true
+            {% endif %}
+            },
             {% for article in catalog.article_set.all %}
               {id: {{ catalog.id }}{{ article.id }}, pId:{{ catalog.id }}, name: '{{ article.name }}',url:"{% url 'page:detail' article.id %}",target:'_self'},
             {% endfor %}
