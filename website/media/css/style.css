@@ -400,3 +400,7 @@ div#content.author p { width: 590px; position: relative; }
 
 .friend-link {position:relative;}
 .friend-link select{margin-top:-38.5px;margin-left:37.5px;}
+.xinde {position:relative;}
+.xinde p{margin:-320px 0 0 30px;line-high:30px;font-zise:15px;}
+.xinde p h2 span{display:block;margin-left:10px;color:red;}
+.red {color:red;}
